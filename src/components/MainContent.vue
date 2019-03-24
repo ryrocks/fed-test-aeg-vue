@@ -49,7 +49,7 @@
             </p>
           </article>
           <div class="d-flex">
-            <span class="pb-2 border-bottom border-danger">READ MORE</span>
+            <span class="read-more-bottom">READ MORE</span>
             <span class="flex-grow-1"></span>
           </div>
         </div>
@@ -68,7 +68,7 @@
             </p>
           </article>
           <div class="d-flex">
-            <span class="pb-2 border-bottom border-danger">READ MORE</span>
+            <span class="read-more-bottom">READ MORE</span>
             <span class="flex-grow-1"></span>
           </div>
         </div>
@@ -88,7 +88,7 @@
             </p>
           </article>
           <div class="d-flex">
-            <span class="pb-2 border-bottom border-danger">READ MORE</span>
+            <span class="read-more-bottom">READ MORE</span>
             <span class="flex-grow-1"></span>
           </div>
         </div>
@@ -132,6 +132,33 @@ a {
   &:hover {
     color: inherit;
     text-decoration: none;
+  }
+}
+
+// READMORE border 
+.read-more-bottom {
+  display: inline-block;
+  position: relative;
+  &:after {
+    content: "";
+    display: block;
+    margin-top: 5px;
+    height: 1px;
+    width: 0px;
+    background: transparent;
+    transition: width 0.5s ease, background-color 0.5s ease;
+  }
+  &:hover:after {
+    width: 100%;
+    background: red;
+  }
+}
+
+// simple effects
+img {
+  transition: opacity 0.5s ease-in-out;
+  &:hover {
+    opacity: 0.5;
   }
 }
 </style>

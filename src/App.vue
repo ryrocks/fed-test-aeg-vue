@@ -38,9 +38,11 @@ export default {
     openModal(value) {
       this.modalOpened = true;
       this.modalSource = value;
+      document.getElementsByTagName("body")[0].classList.add("modal-open");
     },
     closeModal() {
       this.modalOpened = false;
+      document.getElementsByTagName("body")[0].classList.remove("modal-open");
     }
   }
 };
@@ -54,6 +56,10 @@ body {
   /* set body as flex to fill out the empty gap */
   display: flex;
   flex-direction: column;
+}
+/* prevent scrolling when modal opened */
+body.modal-open {
+  overflow: hidden;
 }
 
 .bg-black {
