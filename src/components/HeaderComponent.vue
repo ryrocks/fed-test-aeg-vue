@@ -1,9 +1,9 @@
 <template>
-<footer></footer>
+  <header></header>
 </template>
 <script lang="js">
 export default {
-    name: 'Footer'
+    name: 'HeaderComponent'
 }
 </script>
 

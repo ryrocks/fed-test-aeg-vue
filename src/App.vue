@@ -1,31 +1,41 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+  <div class="bg-black min-h-screen">
+    <b-container class="border border-white">
+      <header-component></header-component>
+      <main-content></main-content>
+      <footer-component></footer-component>
+    </b-container>
   </div>
 </template>
 
 <script>
-// import HelloWorld from "./components/HelloWorld.vue";
-import Header from "./components/Header.vue";
-import Footer from "./components/Footer.vue";
+import HeaderComponent from "./components/HeaderComponent.vue";
+import MainContent from "./components/MainContent.vue";
+import FooterComponent from "./components/FooterComponent.vue";
 
 export default {
   name: "app",
   components: {
-    Header,
-    Footer
+    HeaderComponent,
+    MainContent,
+    FooterComponent
   }
 };
 </script>
 
 <style>
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
+/* define custome styles */
+body {
+  font-family: "Open Sans", sans-serif !important;
+}
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.bg-black {
+  background-color: #0e1414;
 }
 </style>
+
+
