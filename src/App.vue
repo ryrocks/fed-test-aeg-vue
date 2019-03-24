@@ -1,6 +1,6 @@
 <template>
   <div class="bg-black min-h-screen">
-    <b-container class="border border-white">
+    <b-container>
       <header-component></header-component>
       <main-content></main-content>
       <footer-component></footer-component>
@@ -24,13 +24,17 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300");
 /* define custome styles */
 body {
   font-family: "Open Sans", sans-serif !important;
+  /* set body as flex to fill out the empty gap */
+  display: flex; 
+  flex-direction: column;
 }
+
 .min-h-screen {
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 .bg-black {
