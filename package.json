@@ -6,11 +6,14 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "test": "vue-cli-servie test"
+    "test": "vue-cli-servie test",
+    "deploy" : "gh-pages -d dist",
+    "homepage": "https://ryrocks.github.io/fed-test-aeg-vue"
   },
   "dependencies": {
     "bootstrap": "^4.3.1",
     "bootstrap-vue": "^2.0.0-rc.15",
+    "gh-pages": "^2.0.1",
     "vue": "^2.6.10"
   },
   "devDependencies": {

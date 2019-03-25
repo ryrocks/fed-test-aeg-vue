@@ -1,5 +1,11 @@
 # fed-test-aeg
 
+## Online Demo
+[DEMO](https://ryrocks.github.io/fed-test-aeg-vue/)
+
+## TODO
+[] End-to-End Testing 
+
 ## Project setup
 ```
 npm install / yarn install
